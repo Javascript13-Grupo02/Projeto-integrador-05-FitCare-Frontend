@@ -1,5 +1,6 @@
-import { BrowserRouter } from "react-router-dom"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import ListaCategorias from "./components/categoria/listacategoria/ListaCategoria"
+import DeletarCategoria from "./components/categoria/deletarcategoria/DeletarCategoria"
 
 
 function App() {
@@ -8,6 +9,10 @@ function App() {
     <>
     <BrowserRouter>
       < ListaCategorias />
+      <Routes>
+        <Route path="/deletarcategoria/:id" element={<DeletarCategoria />} />
+        <Route />
+      </Routes>
     </BrowserRouter>
     </>
   )
