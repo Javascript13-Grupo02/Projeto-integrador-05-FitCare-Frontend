@@ -1,8 +1,6 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useEffect, useState, type Dispatch } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { ClipLoader } from 'react-spinners'
-import type Exercicio from '../../../models/Exercicio'
-import { buscar, deletar } from '../../../services/Service'
 
 function DeletarExercicio() {
     const navigate = useNavigate()
@@ -79,3 +77,14 @@ function DeletarExercicio() {
     )
 }
 export default DeletarExercicio
+
+
+
+function deletar(arg0: string) {
+    throw new Error('Function not implemented.')
+}
+
+function buscar(arg0: string, setExercicio: Dispatch<any>) {
+    throw new Error('Function not implemented.')
+}
+
