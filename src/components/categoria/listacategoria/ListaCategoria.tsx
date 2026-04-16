@@ -45,11 +45,11 @@ function ListaCategorias() {
       {
        isLoading && (
         <div className="flex justify-center w-full my-8">
-        <SyncLoader
-          color="#312e81"
-          size={32}
-      />
-</div>
+          <SyncLoader
+            color="#e9ecef"
+            size={32}
+          />
+        </div>
        )
       }
       <div className="flex justify-center w-full my-4">
@@ -58,8 +58,8 @@ function ListaCategorias() {
 
           {
             (!isLoading && categorias.length === 0) &&(
-              <span className="text-3xl text-center my-8">
-                Nenhum Categoria foi encontrado!
+              <span className="text-3xl text-center my-8 text-white/55 uppercase tracking-widest font-semibold">
+                Nenhuma categoria encontrada.
               </span>
             )
           }
