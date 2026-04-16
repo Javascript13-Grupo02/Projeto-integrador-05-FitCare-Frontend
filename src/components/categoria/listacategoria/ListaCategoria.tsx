@@ -3,6 +3,7 @@ import type Categoria from "../../../models/Categoria";
 import { SyncLoader } from "react-spinners";
 import CardCategoria from "../cardcategoria/CardCategoria";
 import { buscar } from "../../../services/Service";
+import ModalCategoria from "../modalcategoria/ModalCategoria";
 
 
 function ListaCategorias() {
@@ -69,6 +70,7 @@ function ListaCategorias() {
                 <CardCategoria key={categoria.id} categoria={categoria}/>
               ))
             }
+            <ModalCategoria />
           </div>
         </div>
       </div>

@@ -77,21 +77,21 @@ function FormCategoria() {
   }
 
   return (
-    <div className="container flex flex-col items-center justify-center mx-auto">
+    <div className="flex flex-col gap-6 p-8">
 
-      <h1 className="text-white font-bold uppercase tracking-widest text-2xl text-center my-8">
+      <h1 className="text-white font-bold uppercase tracking-widest text-2xl text-center">
         {id === undefined ? "Cadastrar" : "Editar"} Categoria
       </h1>
 
-      <form className="w-1/2 flex flex-col gap-6" onSubmit={gerarNovoCategoria}>
+      <form className="flex flex-col gap-6" onSubmit={gerarNovoCategoria}>
 
-        <div className="flex flex-col rounded-2xl overflow-hidden bg-zinc-800 border border-white/7">
+        <div className="flex flex-col rounded-2xl overflow-hidden bg-zinc-900 border border-white/7">
 
           <div className="h-0.5 bg-linear-to-r from-emerald-500 to-transparent" />
 
           <div className="flex flex-col gap-2 p-6">
             <label
-              htmlFor="descricao"
+              htmlFor="intensidade"
               className="text-white/55 text-xs font-semibold uppercase tracking-widest"
             >
               Intensidade Categoria
@@ -99,11 +99,12 @@ function FormCategoria() {
             <input
               placeholder="Digite a intensidade da categoria"
               name="intensidade"
-              className="bg-transparent text-white leading-relaxed placeholder:text-white/20 placeholder:text-sm placeholder:tracking-normal placeholder:normal-case placeholder:font-normal outline-none resize-none border-b border-white/6 pb-2 font-bold uppercase tracking-widest text-lg"
+              className="bg-transparent text-white placeholder:text-white/20 placeholder:text-sm placeholder:tracking-normal placeholder:normal-case placeholder:font-normal outline-none border-b border-white/6 font-bold uppercase tracking-widest text-lg py-3"
               value={categoria.intensidade}
-              onChange={(e:ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
+              onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
           </div>
+
           <div className="flex flex-col gap-2 p-6 pt-0">
             <label
               htmlFor="descricao"
@@ -114,8 +115,8 @@ function FormCategoria() {
             <textarea
               placeholder="Descreva aqui a sua categoria"
               name="descricao"
-              rows={5}
-              className="bg-transparent text-white text-sm leading-relaxed placeholder:text-white/20 outline-none resize-none border-b border-white/6 pb-2"
+              rows={8}
+              className="bg-transparent text-white text-sm leading-relaxed placeholder:text-white/20 outline-none resize-none border-b border-white/6 py-3"
               value={categoria.descricao}
               onChange={(e: ChangeEvent<HTMLTextAreaElement>) => atualizarEstado(e)}
             />
@@ -124,7 +125,7 @@ function FormCategoria() {
         </div>
 
         <button
-          className="rounded-xl text-emerald-500 text-xs font-semibold uppercase tracking-widest bg-zinc-800 border border-white/7 hover:bg-emerald-500/10 w-1/2 py-3 mx-auto flex justify-center transition-colors duration-200"
+          className="rounded-xl text-emerald-500 text-xs font-semibold uppercase tracking-widest bg-zinc-900 border border-white/7 hover:bg-emerald-500/10 py-3 flex justify-center transition-colors duration-200"
           type="submit"
         >
           {isLoading
