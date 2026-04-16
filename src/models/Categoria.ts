@@ -1,8 +1,8 @@
 import type Exercicio from "./Exercicio";
 
-export default interface Tema{
+export default interface Categoria {
   id: number;
   intensidade: string;
   descricao: string;
-  exercicio?: Exercicio[] | null
+  exercicio?: Exercicio[] | null;
 }
