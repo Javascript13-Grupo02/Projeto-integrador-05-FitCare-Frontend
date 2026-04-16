@@ -1,0 +1,535 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Fitcare
+meta:
+  id: wrk_27136b9effa84ab7897c88410bb744fa
+  created: 1773335779438
+  modified: 1773335779438
+  description: ""
+collection:
+  - name: Categoria
+    meta:
+      id: fld_4c924fb97a944998853daab96e43ee24
+      created: 1773335789032
+      modified: 1773335789032
+      sortKey: -1773335789032
+      description: ""
+    children:
+      - url: http://localhost:4000/categorias/all
+        name: 01 - Listar todas as categorias
+        meta:
+          id: req_4c36b95ee34245e1a28f35cbcfb1da5c
+          created: 1773335791833
+          modified: 1773403167465
+          isPrivate: false
+          description: ""
+          sortKey: -1773335791833
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4000/categorias/cadastrar
+        name: 04 - Cadastrar categoria
+        meta:
+          id: req_b3ff297a75a7419d817b793ac1a51789
+          created: 1773336933210
+          modified: 1773422476260
+          isPrivate: false
+          description: ""
+          sortKey: -1773205064912.5
+        method: POST
+        body:
+          mimeType: application/json
+          text: >-
+            {
+            	"intensidade": "Insana",
+            	"descricao": "Bem-vindo ao território do impossível. Aqui o conforto não existe e o cansaço é apenas um sinal de que você está no caminho certo. Voltado para atletas de elite e mentes inabaláveis, o nível insano combina volume crítico, cargas máximas e intervalos mínimos. É o teste definitivo de resiliência, projetado para romper todos os seus limites e redefinir o que você entende por esforço."
+            }	
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4000/categorias/5
+        name: 06 - Deletar categoria
+        meta:
+          id: req_98f0fe45136e4505865521744d79f8e0
+          created: 1773337187332
+          modified: 1776344946639
+          isPrivate: false
+          description: ""
+          sortKey: -1773205064812.5
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4000/categorias/1
+        name: 03 - Listar por ID
+        meta:
+          id: req_489dbdcc90a24b058700aa6d8dfb4702
+          created: 1773337881116
+          modified: 1776344701769
+          isPrivate: false
+          description: ""
+          sortKey: -1773270428372.75
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4000/categorias/atualizar
+        name: 05 - Atualizar categoria
+        meta:
+          id: req_abbe797eafeb4067956c663e1ab5f116
+          created: 1773338032159
+          modified: 1773423022603
+          isPrivate: false
+          description: ""
+          sortKey: -1773205064862.5
+        method: PUT
+        body:
+          mimeType: application/json
+          text: >-
+            {
+            	"id": 4,
+            	"intensidade": "Insana",
+            	"descricao": "Bem-vindo ao território do impossível. Aqui o conforto não existe e o cansaço é apenas um sinal de que você está no caminho certo. Voltado para atletas de elite e mentes inabaláveis, o nível insano combina volume crítico, cargas máximas e intervalos mínimos. É o teste definitivo de resiliência, projetado para romper todos os seus limites e redefinir o que você entende por esforço.   ----- BOA SORTE! -----"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4000/categorias/intensidade/me
+        name: 02 - Listar por intensidade
+        meta:
+          id: req_6e12408571f6485b85a1639967a7d51a
+          created: 1773348421346
+          modified: 1776344691386
+          isPrivate: false
+          description: ""
+          sortKey: -1773303110102.875
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Usuário
+    meta:
+      id: fld_2f705bf207f64465941d8d8fe29d6a96
+      created: 1773339904001
+      modified: 1773339977716
+      sortKey: -1773205049866.5
+      description: ""
+    children:
+      - url: http://localhost:4000/usuarios/all
+        name: 01 - Listar todos os usuários
+        meta:
+          id: req_93ad502022a741cc8aa02d3d0f66c2e8
+          created: 1773339904002
+          modified: 1773403913596
+          isPrivate: false
+          description: ""
+          sortKey: -1773335791833
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4000/usuarios/cadastrar
+        name: 04 - Cadastrar usuário
+        meta:
+          id: req_51499cf3fe9d4ffb8d3533f9e42fa6de
+          created: 1773339904003
+          modified: 1773404039726
+          isPrivate: false
+          description: ""
+          sortKey: -1773205064912.5
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "Ricardo Santos",
+              "usuario": "ricardo.santos@email.com",
+              "senha": "mudar@12345",
+              "peso": 82.5,
+              "altura": 1.78,
+              "foto": "https://images.com/profiles/ricardo-santos.png"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4000/usuarios/1
+        name: 02 - Listar por ID
+        meta:
+          id: req_1fed275e14db4751832433d03e114caa
+          created: 1773339904004
+          modified: 1773419936195
+          isPrivate: false
+          description: ""
+          sortKey: -1773270428372.75
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4000/usuarios/atualizar
+        name: 05 - Atualizar usuário
+        meta:
+          id: req_2994b1130c7542b5a56467b9b74fd4d0
+          created: 1773339904004
+          modified: 1773423075544
+          isPrivate: false
+          description: ""
+          sortKey: -1773205064850
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"id": 4,
+            	"nome": "Ricardo SOUZA Santos",
+              "usuario": "ricardo.santos@email.com",
+              "senha": "mudar@12345",
+              "peso": 82.5,
+              "altura": 1.78,
+              "foto": "https://images.com/profiles/ricardo-santos.png"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4000/usuarios/usuario/carlos.treino@email.com
+        name: 03 - Buscar por usuário
+        meta:
+          id: req_23fc6d026cc04dafba807d11199a8563
+          created: 1773404111627
+          modified: 1773414958145
+          isPrivate: false
+          description: ""
+          sortKey: -1773254087507.6875
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4000/usuarios/imc/1
+        name: 06 - Calcular IMC
+        meta:
+          id: req_16334a1b1fe7443fadb7427d9f4376d5
+          created: 1773404185856
+          modified: 1773422032447
+          isPrivate: false
+          description: ""
+          sortKey: -1773205064837.5
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Exercicio
+    meta:
+      id: fld_ef6b284e1dae4a029ff1fad0a32b9cf8
+      created: 1773346157135
+      modified: 1773346157135
+      sortKey: -1773270419449.25
+      description: ""
+    children:
+      - url: http://localhost:4000/exercicios/all
+        name: 01 - Listar todas os exercícios
+        meta:
+          id: req_386e36d641e84387a8b38513dd108ff1
+          created: 1773346157136
+          modified: 1773346633840
+          isPrivate: false
+          description: ""
+          sortKey: -1773335791833
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4000/exercicios/cadastrar
+        name: 04 - Cadastrar exercício
+        meta:
+          id: req_8d84b484065d4164b17b4e91bbadfdbc
+          created: 1773346157137
+          modified: 1773421943517
+          isPrivate: false
+          description: ""
+          sortKey: -1773205064912.5
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "Circuito Hell Day: Full Body",
+            	"duracao": 50,
+            	"tipo": "hiit",
+            	"foto": "https://images.com/hell-day.jpg",
+            	"categoria": {
+            		"id": 3
+            	}
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4000/exercicios/14
+        name: 06 - Deletar exercício
+        meta:
+          id: req_e2cbf24cd7064f90b93070c3f7d427aa
+          created: 1773346157138
+          modified: 1776344961690
+          isPrivate: false
+          description: ""
+          sortKey: -1773205064812.5
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4000/exercicios/atualizar
+        name: 05 - Atualizar exercício
+        meta:
+          id: req_8d551321c0c3422d873afe963b6d1241
+          created: 1773346157139
+          modified: 1776344822316
+          isPrivate: false
+          description: ""
+          sortKey: -1773205064862.5
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            		"id": 14,
+            		"nome": "Circuito Hell Day: Full Body",
+            		"duracao": 50,
+            		"tipo": "hiit",
+            		"foto": "https://images.com/hell-day.jpg",
+            		"categoria": {
+            			"id": 5
+            		}
+            	}
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4000/exercicios/6
+        name: 02 - Listar por ID
+        meta:
+          id: req_b0c191c043724a5c8bce49bf850b2d22
+          created: 1773346157139
+          modified: 1773421875161
+          isPrivate: false
+          description: ""
+          sortKey: -1773270428372.75
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4000/exercicios/tipo/hi
+        name: 03 - Buscar por tipo
+        meta:
+          id: req_bebf3e714ba942f8ba728124c44233e4
+          created: 1773402680564
+          modified: 1773404815681
+          isPrivate: false
+          description: ""
+          sortKey: -1773237746642.625
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_eb9966975d14c3979423f0e6c5e2e702ca076bf2
+    created: 1773335779441
+    modified: 1773335779441
+environments:
+  name: Base Environment
+  meta:
+    id: env_eb9966975d14c3979423f0e6c5e2e702ca076bf2
+    created: 1773335779439
+    modified: 1773335779439
+    isPrivate: false
