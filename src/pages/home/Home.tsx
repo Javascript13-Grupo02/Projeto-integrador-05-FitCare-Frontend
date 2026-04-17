@@ -67,7 +67,21 @@ function Home() {
 
         </div>
       <FormContato />
-    </div>
+        <div className="max-w-5xl mx-auto w-full mt-12 flex flex-col md:flex-row items-center justify-between gap-6 px-8 py-10 rounded-2xl bg-white/3 border border-white/7">
+          <div className="flex-1">
+            <p className="text-white font-bold text-lg mb-1">Acompanhe sua evolução</p>
+            <p className="text-white/75 text-sm leading-relaxed">
+              Quer medir o seu progresso ao longo da jornada FitCare? Conheça nossa calculadora de IMC e mantenha o foco nos seus resultados.
+            </p>
+          </div>
+          <Link
+            to="/imc"
+            className="shrink-0 w-full md:w-auto text-center px-8 py-3 rounded-xl bg-zinc-800 border border-white/7 text-white text-xs font-semibold uppercase tracking-widest hover:bg-emerald-500/10 hover:border-emerald-500/40 hover:text-emerald-500 transition-all duration-200"
+          >
+            Calcular IMC
+          </Link>
+        </div>
+      </div>
       
     </>
   )
