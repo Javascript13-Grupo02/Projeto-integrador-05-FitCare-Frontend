@@ -62,7 +62,7 @@ function CalculadoraImc() {
         <div>
           <label className="block text-white/55 text-sm font-medium mb-1">Altura (cm)</label>
           <input
-            type="number"
+            type="text"
             value={altura}
             onChange={(e) => setAltura(e.target.value)}
             placeholder="Ex: 175"

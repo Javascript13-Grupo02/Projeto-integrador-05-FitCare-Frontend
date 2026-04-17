@@ -5,7 +5,7 @@ import FormContato from "../../components/form/Form"
 function Home() {
   return (
     <>
-      <section className="bg-orange-100 flex flex-col items-center justify-center pt-8 bg-[url('https://plus.unsplash.com/premium_photo-1679938885972-180ed418f466')] bg-cover bg-center relative h-dvh">
+      <section className="bg-orange-100 flex flex-col items-center justify-center pt-8 bg-[url('https://images.unsplash.com/photo-1758274536471-912e9d20d4fc')] bg-cover bg-center relative h-dvh">
         <div className="absolute inset-0 bg-black/50">
         </div>
         <div className="z-10 flex flex-col items-center justify-center gap-4">
