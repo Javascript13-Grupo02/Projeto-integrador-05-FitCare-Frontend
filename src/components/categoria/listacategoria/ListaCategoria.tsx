@@ -43,6 +43,7 @@ function ListaCategorias() {
 
   return  (
     <>
+    <div className="bg-linear-to-br from-black to-[#087f5b] w-full py-12 px-4 min-h-screen">
       {
        isLoading && (
         <div className="flex justify-center w-full my-8">
@@ -68,12 +69,14 @@ function ListaCategorias() {
             {
               categorias.map((categoria) => (
                 <CardCategoria key={categoria.id} categoria={categoria}/>
+                
               ))
             }
             <ModalCategoria />
           </div>
         </div>
       </div>
+    </div>
     </>
   )
 }

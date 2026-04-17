@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 function Navbar() {
   return (
-    <div className='w-full flex justify-center py-4 bg-teal-900 text-white'>
+    <div className='w-full flex justify-center py-4 bg-zinc-900 text-white'>
       <div className="container flex justify-between text-lg mx-8">
 
         <Link to='/home' className="flex items-center gap-2 text-2xl font-bold">
@@ -15,7 +15,7 @@ function Navbar() {
         </Link>
 
         <div className='flex gap-4'>
-          <Link to='/categoria' className='hover:text-emerald-500 transition-colors'>Categoria</Link>
+          <Link to='/categorias' className='hover:text-emerald-500 transition-colors'>Categoria</Link>
           <Link to='/exercicio' className='hover:text-emerald-500 transition-colors'>Exercício</Link>
           <Link to='/sobre' className='hover:text-emerald-500 transition-colors'>Sobre</Link>
           <Link to='/equipe' className='hover:text-emerald-500 transition-colors'>Equipe</Link>
