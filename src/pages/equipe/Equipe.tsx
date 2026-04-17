@@ -4,9 +4,9 @@ function Equipe() {
     const membros = [
         { nome: "Daniel Nascimento", foto: "https://ik.imagekit.io/vjqejp2vh/integrantes/foto-daniel-nascimento.png?updatedAt=1776195525043", link: "https://dnasciment0.github.io/portfolio_tjs13/", texto: "Desenvolvedor", posicaoFoto: "object-[70%_top]" },
         { nome: "Leonardo Ibanhez", foto: "https://ik.imagekit.io/vjqejp2vh/integrantes/foto-leonardo-ibanhez.jpg?updatedAt=1776195523970", link: "https://leoibanhez92.github.io/portfolio_tjs_13/", texto: "Desenvolvedor" },
-        { nome: "Paula Alcantara", foto: "https://ik.imagekit.io/vjqejp2vh/integrantes/foto-paula-alcantara.jpg?updatedAt=1776195524895", link: "https://portfolio-generation-paula.netlify.app/", texto: "SCRUM Master" },
-        { nome: "Vivian Rodrigues", foto: "https://ik.imagekit.io/vjqejp2vh/integrantes/foto-vivian-rodrigues.png?updatedAt=1776195525935", link: "https://dashenio.github.io/portfolio/", texto: "Desenvolvedor" },
-        { nome: "Wallace Silva", foto: "https://ik.imagekit.io/vjqejp2vh/integrantes/foto-wallace.jpg?updatedAt=1776200225538", link: "https://portfolio-we-dev.vercel.app/", texto: "Tester" },
+        { nome: "Paula Alcantara", foto: "https://ik.imagekit.io/vjqejp2vh/integrantes/foto-paula-alcantara.jpg?updatedAt=1776195524895", link: "https://portfolio-generation-paula.netlify.app/", texto: "Desenvolvedora" },
+        { nome: "Vivian Rodrigues", foto: "https://ik.imagekit.io/vjqejp2vh/integrantes/foto-vivian-rodrigues.png?updatedAt=1776195525935", link: "https://dashenio.github.io/portfolio/", texto: "Tester" },
+        { nome: "Wallace Silva", foto: "https://ik.imagekit.io/vjqejp2vh/integrantes/foto-wallace.jpg?updatedAt=1776200225538", link: "https://portfolio-we-dev.vercel.app/", texto: "SCRUM Master" },
     ];
 
     // Função que renderiza cada card de membro
