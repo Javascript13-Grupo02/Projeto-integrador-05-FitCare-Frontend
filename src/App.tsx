@@ -7,6 +7,7 @@ import Footer from "./components/footer/Footer";
 import Sobre from "./pages/sobre/Sobre";
 import Equipe from "./pages/equipe/Equipe";
 import Home from "./pages/home/Home";
+import FormExercicio from "./components/exercicio/formexercicio/FormExercicio";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
             <Route path="/cadastrarcategoria" element={<FormCategoria />} />
             <Route path="/editarcategoria/:id" element={<FormCategoria />} />
             <Route path="/categorias" element={<ListaCategorias />} />
+            <Route path="/cadastrarexercicio" element={<FormExercicio />} />
+            <Route path="/editarexercicio/:id" element={<FormExercicio />} />
             <Route />
           </Routes>
         </div>
