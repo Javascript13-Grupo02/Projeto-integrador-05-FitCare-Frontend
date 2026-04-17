@@ -8,6 +8,7 @@ import Sobre from "./pages/sobre/Sobre";
 import Equipe from "./pages/equipe/Equipe";
 import Home from "./pages/home/Home";
 import FormExercicio from "./components/exercicio/formexercicio/FormExercicio";
+import CalculadoraPage from "./pages/calculadora/Calculadora";
 
 function App() {
   return (
