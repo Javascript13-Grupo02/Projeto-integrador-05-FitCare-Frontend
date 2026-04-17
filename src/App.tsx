@@ -18,6 +18,7 @@ function App() {
             <Route path="/home" element={<Home />} />
             <Route path="/sobre" element={<Sobre />} />
             <Route path="/equipe" element={<Equipe />} />
+            {/* <Route path="/calculadora" element={<Calcula />} /> */}
             <Route path="/deletarcategoria/:id" element={<DeletarCategoria />} />
             <Route path="/cadastrarcategoria" element={<FormCategoria />} />
             <Route path="/editarcategoria/:id" element={<FormCategoria />} />
@@ -29,8 +30,6 @@ function App() {
       </BrowserRouter>
     </>
   );
-  );
 }
 
-export default App;
 export default App;
