@@ -54,7 +54,7 @@ function Equipe() {
     // Renderização principal da página
     return (
         <div
-            className="min-h-screen flex flex-col items-center py-16 px-4 bg-gradient-to-br from-black to-emerald-700"
+            className="min-h-screen flex flex-col items-center py-16 px-4 bg-linear-to-br from-black to-emerald-700"
         >
             {/* Título e logo */}
             <div className="flex items-center gap-3 mb-8 sm:mb-12">
