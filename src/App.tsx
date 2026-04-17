@@ -25,6 +25,7 @@ function App() {
             <Route path="/categorias" element={<ListaCategorias />} />
             <Route path="/cadastrarexercicio" element={<FormExercicio />} />
             <Route path="/editarexercicio/:id" element={<FormExercicio />} />
+            <Route path="/calculadora" element={<CalculadoraPage />} />
             <Route />
           </Routes>
         </div>
