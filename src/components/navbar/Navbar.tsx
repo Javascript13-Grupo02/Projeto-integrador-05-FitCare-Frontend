@@ -16,7 +16,7 @@ function Navbar() {
 
         <div className='flex gap-4'>
           <Link to='/categorias' className='hover:text-emerald-500 transition-colors hidden sm:flex gap-4'>Categorias</Link>
-          <Link to='/exercicio' className='hover:text-emerald-500 transition-colors hidden sm:flex gap-4'>Exercícios</Link>
+          <Link to='/exercicios' className='hover:text-emerald-500 transition-colors hidden sm:flex gap-4'>Exercícios</Link>
           <Link to='/sobre' className='hover:text-emerald-500 transition-colors'>Sobre</Link>
           <Link to='/equipe' className='hover:text-emerald-500 transition-colors'>Equipe</Link>
         </div>

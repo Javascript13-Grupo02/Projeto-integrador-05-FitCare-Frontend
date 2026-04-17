@@ -12,7 +12,7 @@ function Home() {
           <h1 className="text-3xl md:text-5xl font-bold  text-white text-center m-2">Movendo de acordo com a sua necessidade</h1>
           <p className="text-2xl md:text-3xl font-medium leading-snug text-white text-center m-2">Treinos rápidos e eficientes na palma da sua mão, a qualquer momento do seu dia</p>
           <Link 
-            to="/categorias" 
+            to="/exercicios" 
             className="bg-emerald-500 hover:bg-emerald-400 text-white text-lg font-semibold px-8 py-3 rounded-full transition-colors duration-300"
             >
             Começar agora
@@ -75,7 +75,7 @@ function Home() {
             </p>
           </div>
           <Link
-            to="/imc"
+            to="/calculadora"
             className="shrink-0 w-full md:w-auto text-center px-8 py-3 rounded-xl bg-zinc-800 border border-white/7 text-white text-xs font-semibold uppercase tracking-widest hover:bg-emerald-500/10 hover:border-emerald-500/40 hover:text-emerald-500 transition-all duration-200"
           >
             Calcular IMC

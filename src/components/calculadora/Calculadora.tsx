@@ -6,7 +6,7 @@ function CalculadoraImc() {
   const [imc, setImc] = useState<number | null>(null);
   const [classificacao, setClassificacao] = useState("");
 
-  const calcularImc = (e: React.FormEvent<HTMLFormElement>) => {
+  const calcularImc = (e: React.SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const pesoNum = parseFloat(peso.replace(",", "."));

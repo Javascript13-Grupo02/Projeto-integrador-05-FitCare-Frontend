@@ -1,9 +1,8 @@
-import { useEffect, useState,} from "react";
+import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { ClipLoader } from "react-spinners";
 import type Exercicio from "../../../models/Exercicio";
 import { buscar, deletar } from "../../../services/Service";
-import { CheckIcon, XIcon } from "@phosphor-icons/react";
 
 function DeletarExercicio() {
   const navigate = useNavigate();
@@ -35,48 +34,51 @@ function DeletarExercicio() {
   }
 
   return (
+    <div className="container w-full max-w-md mx-auto px-4">
 
-    <div className="bg-linear-to-br from-black to-[#087f5b] text-white">
-    <div className="container w-1/3 mx-auto">
-      <h1 className="text-4xl text-center my-4">Deletar Exercício</h1>
-
-      <p className="text-center font-semibold mb-4">
+      <h1 className="text-4xl text-center text-white font-bold uppercase tracking-widest my-4">
+        Deletar Exercício
+      </h1>
+      <p className="text-center text-white/55 text-sm font-semibold mb-4">
         Você tem certeza de que deseja apagar o exercício a seguir?
       </p>
 
-      <div className="border border-black/20 flex flex-col overflow-hidden justify-between">
-        <header className="py-2 px-6  bg-teal-900 text-white font-bold text-2xl">
-          Exercício
-        </header>
-        <div className="p-4">
-          <p className="text-xl h-full">{exercicio.nome}</p>
-          <p>{exercicio.tipo}</p>
-        </div>
-        
-        <div className="flex">
+      <div className="flex flex-col rounded-2xl overflow-hidden bg-zinc-800 border border-white/7">
 
-        <div className="grid grid-cols-2 border-t border-white/6 w-full">
-          <a
-            className="flex items-center justify-center gap-2 py-3 text-xs text-white/40 font-semibold uppercase tracking-widest border-white bg-red-800/50 hover:bg-red-700/70  hover:text-white transition-colors duration-200"
-            onClick={retornar}>
-            <XIcon size={32} color="#ffffff" /> Não
-          </a>
-          
-          <a
-            className="flex items-center justify-center gap-2 py-3 text-white/40 text-xs font-semibold uppercase tracking-widest hover:bg-emerald-400/70 hover:text-white transition-colors duration-200"
-            onClick={deletarExercicio}>
-            <CheckIcon size={32} color="#ffffff"/>
-              {isLoading ? (
-                <ClipLoader color="#ffffff" size={24} />
-              ) : (
-                <span>Sim</span>
-              )}
-          </a>
-        </div>        
+        <div className="h-0.5 bg-linear-to-r from-red-500 to-transparent" />
+
+        <header className="flex items-center justify-between px-6 py-4 border-b border-white/6">
+          <span className="text-white font-bold uppercase tracking-widest text-lg">
+            {exercicio.nome}
+          </span>
+          <span className="w-2 h-2 rounded-full bg-red-500 shadow-[0_0_8px_#ef4444]" />
+        </header>
+
+        <p className="p-8 text-white/55 text-sm leading-relaxed h-full">
+          {exercicio.tipo}
+        </p>
+
+        <div className="flex">
+          <button
+            className="w-full flex items-center justify-center py-3 text-red-400 text-xs font-semibold uppercase tracking-widest border-t border-r border-white/6 hover:bg-red-500/10 transition-colors duration-200"
+            onClick={retornar}
+          >
+            Não
+          </button>
+          <button
+            className="w-full flex items-center justify-center py-3 text-emerald-500 text-xs font-semibold uppercase tracking-widest border-t border-white/6 hover:bg-emerald-500/10 transition-colors duration-200"
+            onClick={deletarExercicio}
+          >
+            {isLoading
+              ? <ClipLoader color="#10b981" size={16} />
+              : <span>Sim</span>
+            }
+          </button>
         </div>
+
       </div>
-    </div>  
     </div>
   );
 }
+
 export default DeletarExercicio;

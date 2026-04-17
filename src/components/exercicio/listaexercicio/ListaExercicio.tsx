@@ -3,6 +3,7 @@ import CardExercicio from "../cardexercicio/CardExercicio";
 import type Exercicio from "../../../models/Exercicio";
 import { buscar } from "../../../services/Service";
 import { SyncLoader } from "react-spinners";
+import ModalExercicio from "../modalexercicio/ModalExercicio";
 
 function ListaExercicios() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -28,6 +29,7 @@ function ListaExercicios() {
 
   return (
     <>
+    <div className="bg-linear-to-br from-black to-[#087f5b] w-full py-12 px-4 min-h-screen">
       {isLoading && (
         <div className="flex justify-center w-full my-8">
           <SyncLoader color="#e9ecef" size={32} />
@@ -45,9 +47,11 @@ function ListaExercicios() {
             {exercicios.map((exercicio) => (
               <CardExercicio key={exercicio.id} exercicio={exercicio} />
             ))}
+            < ModalExercicio />
           </div>
         </div>
       </div>
+    </div>
     </>
   );
 }
